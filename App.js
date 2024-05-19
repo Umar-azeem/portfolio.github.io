@@ -5,11 +5,14 @@ import app1 from './imag/small.png'
 import app2 from './imag/prc1.png'
 import app3 from './imag/pr2.png'
 import app4 from './imag/prc3.png'
-import app5 from './imag/project4.png'
+import app5 from './imag/prc4.png'
 import Facebook from "./imag/facebook.svg";
 import LinkedIn from "./imag/linkedin.svg";
 import Instagram from "./imag/instagram.svg";
+import Snapchat from "./imag/snap.png";
+import Github from "./imag/git.png";
 import ArrowDown from "./imag/arrow-down.svg";
+
 import { useEffect, useState } from "react";
 
 function App() {
@@ -61,48 +64,48 @@ function App() {
                 </button> 
             </div>
           <div className='relative'>
-          <img src={app} width={140} height={160} className='relative z-10 rounded-full'></img>
-          <img src={app1} width={150} height={150} className='absolute top-0 left-10 z-0'></img>
+          <img src={app} className='relative z-10 rounded-full w-[150px] m-auto sm:w-[150px]'></img>
+          <img src={app1} className='absolute top-[-10px] left-14 z-0 w-[150px] h-[150px] m-auto sm:w-[220px]'></img>
           </div>
           </div>
         </section>
-
+         {/* Projects section */}
         <section>
-          <div className='container m-auto px-4 py-12'>
+          <div className='container m-auto px-4 sm:py-12'>
             <h2 className='text-2xl font-semibold'>Projects</h2>
-            <div className='flex gap-4 mt-16'>
-            <div className='border border-gray-500 rounded-md p-5'>
-              <img src={app2} width={400} height={340}></img>
-              <h3 className='text-2xl font-bold mt-8'>Apple store practice project</h3>
+            <div className='flex flex-col sm:flex-row gap-10 mt-11'>
+            <div className='border border-gray-500 rounded-md p-5 flex-1'>
+              <img src={app2} width={400} height={340}></img>{/* cheack all img section */}
+              <h3 className='text-2xl font-semibold mt-8'>Apple store practice project</h3>
               <p className='text-gray-500 hover:text-cyan-500 text-sm mt-5' >Responsive HTML/CSS layout practice project.<br></br> HTML5, CSS3 (SCSS)</p>
             <div className='flex justify-evenly gap-2 mt-12'>
               <button className='px-8 py-3 text-lg bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-blue-700 hover:to-cyan-700'>Live preview</button>
               <button className='px-6 py-2 border rounded-full hover:border-blue-500 hover:text-blue-700'>Checkout github</button>
-              </div>           
+              </div>           {/* cheack all btn section */}
             </div>
-            <div className='border border-gray-500 rounded-md p-5'>
+            <div className='border border-gray-500 rounded-md p-5 flex-1'>
               <img src={app3} width={400} height={340}></img>
-              <h3 className='text-2xl font-bold mt-8'>Wather web page practice project</h3>
+              <h3 className='text-2xl font-semibold mt-8'>Wather web page practice project</h3>
               <p className='text-gray-500 hover:text-cyan-500 text-sm mt-5' > HTML/CSS/javascript layout with working function creat <br></br> with logics, practice project. HTML5, CSS3 (SCSS)</p>
             <div className='flex justify-evenly gap-2 mt-12'>
-              <button className='px-8 py-3 text-lg bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-blue-700 hover:to-cyan-700'>Live preview</button>
+              <button className='px-8 py-3  text-lg bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-blue-700 hover:to-cyan-700'>Live preview</button>
               <button className='px-6 py-2 border rounded-full hover:border-blue-500 hover:text-blue-700'>Checkout github</button>
               </div>           
             </div>
             </div>
-            <div className='flex gap-4 mt-16'>
-            <div className='border border-gray-500 rounded-md p-5'>
+            <div className='flex flex-col sm:flex-row gap-10 mt-11'>
+            <div className='border border-gray-500 rounded-md p-5 flex-1'>
               <img src={app4} width={400} height={340}></img>
-              <h3 className='text-2xl font-bold mt-8'>Apple store practice project</h3>
+              <h3 className='text-2xl font-semibold mt-8'>Apple store practice project</h3>
               <p className='text-gray-500 hover:text-cyan-500 text-sm mt-5' >Responsive HTML/CSS layout practice project.<br></br> HTML5, CSS3 (SCSS)</p>
             <div className='flex justify-evenly gap-2 mt-12'>
-              <button className='px-8 py-3 text-lg bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-blue-700 hover:to-cyan-700'>Live preview</button>
+              <button className='px-6 py-3  text-lg bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-blue-700 hover:to-cyan-700'>Live preview</button>
               <button className='px-6 py-2 border rounded-full hover:border-blue-500 hover:text-blue-700'>Checkout github</button>
               </div>           
             </div>
-            <div className='border border-gray-500 rounded-md p-5'>
+            <div className='border border-gray-500 rounded-md p-5 flex-1'>
               <img src={app5} width={400} height={340}></img>
-              <h3 className='text-2xl font-bold mt-8'>Wather web page practice project</h3>
+              <h3 className='text-2xl font-bold mt-8'>E-commerce web page project</h3>
               <p className='text-gray-500 hover:text-cyan-500 text-sm mt-5' > HTML/CSS/javascript layout with working function creat <br></br> with logics, practice project. HTML5, CSS3 (SCSS)</p>
             <div className='flex justify-evenly gap-2 mt-12'>
               <button className='px-8 py-3 text-lg bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-blue-700 hover:to-cyan-700'>Live preview</button>
@@ -112,7 +115,7 @@ function App() {
           </div>
           </div>
           {/* Technoglies section */}
-          <section className='mt-12'>
+          <section className='mt-12' id="technologies">
             <div className='container m-auto px-4'>
               <h2 className='text-2xl font-semibold'>Technologies</h2>
               
@@ -211,34 +214,28 @@ function App() {
             <h2 className="text-2xl font-semibold">About me</h2>
             <div className="mt-12 relative before:absolute before:top-0 before:left-16 before:rounded-full before:bottom-10 sm:before:bottom-2 before:w-1 before:bg-white">
               <div className="pl-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
-                <h3 className="absolute left-0 text-lg font-semibold">2015</h3>
+                <h3 className="absolute left-0 text-lg font-semibold">2024</h3>
                 <p>
-                  Graduated KTC (Krasnodar Technical College) and for about two
-                  years worked with high voltage (35, 110kV) substations as the
-                  specialty electrician of emergency mobile crew. Later
-                  qualified as a Crossfit trainer.
+                Internship As a front end developer ==== Wixpa pvt LTD Company
                 </p>
               </div>
               <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
-                <h3 className="absolute left-0 text-lg font-semibold">2015</h3>
+                <h3 className="absolute left-0 text-l font-semibold">2023</h3>
                 <p>
-                  Underwent a digital marketing course and started to work as a
-                  PPC and project manager in a local web studio. After 3 months
-                  started my own freelance practice.
+                Computer Operator & Management ==== shangrilla bakery and departmental store <br></br>
+                Computer Operater ==== New Awami general store
                 </p>
               </div>
               <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
-                <h3 className="absolute left-0 text-lg font-semibold">2015</h3>
+                <h3 className="absolute left-0 text-lg font-semibold">2022</h3>
                 <p>
-                  Became more interested in IT and decided to try programming.
-                  Underwent Java course and made a project.
+                  Customer care service ==== Brit site telemarketing Call center
                 </p>
               </div>
               <div className="pl-24 mt-24 relative before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:absolute before:rounded-full before:left-[58px]">
-                <h3 className="absolute left-0 text-lg font-semibold">2015</h3>
+                <h3 className="absolute left-0 text-lg font-semibold">2021</h3>
                 <p>
-                  Worked out in which field I want to build a developer's career
-                  and started to learn Frontend Development.
+                Coordinator & computer Operator ==== Radio FM 104 bhalwal
                 </p>
               </div>
             </div>
@@ -263,23 +260,18 @@ function App() {
                 </a>
               </li>
               <li>
-                <a>
-                  <img src={Instagram} className="w-5" />
+                <a href="">
+                  <img src={Instagram} className="w-5"  />
                 </a>
               </li>
               <li>
                 <a>
-                  <img className="w-5" />
+                  <img src={Snapchat} className="w-6 rounded-lg" />
                 </a>
               </li>
               <li>
                 <a>
-                  <img  className="w-5" />
-                </a>
-              </li>
-              <li>
-                <a>
-                  <img className="w-5" />
+                  <img src={Github} className="w-5 rounded-lg" />
                 </a>
               </li>
             </ul>
