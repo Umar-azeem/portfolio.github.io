@@ -60,7 +60,7 @@ function App() {
               <h1 className='font-bold text-4xl mt-1 gradiant-text'>front-end developer</h1>
               <p className='mt-4 text-gray-400 hover:text-cyan-500'>Former digital-marketing specialist,seeking to apply competent <br></br> development skills with focus on collabortion,communication,<br></br>and passion</p>
               <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                  Download resume
+                  <a href='https://drive.google.com/file/d/1oqGi7DXULYdTi0rvi5omf_M8ez5gxLz1/view?usp=sharing' target='_blank'>Download resume</a>
                 </button> 
             </div>
           <div className='relative'>
@@ -71,45 +71,48 @@ function App() {
         </section>
          {/* Projects section */}
         <section>
-          <div className='container m-auto px-4 sm:py-12'>
+          <div className='container m-auto px-4 sm:py-12' id='pro'>
             <h2 className='text-2xl font-semibold'>Projects</h2>
             <div className='flex flex-col sm:flex-row gap-10 mt-11'>
             <div className='border border-gray-500 rounded-md p-5 flex-1'>
-              <img src={app2} width={400} height={340}></img>{/* cheack all img section */}
-              <h3 className='text-2xl font-semibold mt-8'>Apple store practice project</h3>
-              <p className='text-gray-500 hover:text-cyan-500 text-sm mt-5' >Responsive HTML/CSS layout practice project.<br></br> HTML5, CSS3 (SCSS)</p>
+              <img src={app5} width={400} height={340}></img>{/* cheack all img section */}
+              <h3 className='text-2xl font-semibold mt-8'>Iframeshop E-commerce web page</h3>
+              <p className='text-gray-500 hover:text-cyan-500 text-sm mt-5' >TailwindCSS/React layout layout with working function creat<br></br>with logics.Tailwind CSS v3.4 HTML5, (SCSS)</p>
             <div className='flex justify-evenly gap-2 mt-12'>
-              <button className='px-8 py-3 text-lg bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-blue-700 hover:to-cyan-700'>Live preview</button>
-              <button className='px-6 py-2 border rounded-full hover:border-blue-500 hover:text-blue-700'>Checkout github</button>
+              <a href='https://www.iframeshop.org/' target='_blank'><button className='px-8 py-3 text-lg bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-blue-700 hover:to-cyan-700'>Live preview</button></a>
+              <a href='https://github.com/Umar-azeem/cards-github.io' target='_blank'> <button className='px-8 py-3 border rounded-full hover:border-blue-500 hover:text-blue-700'>Checkout github</button>
+              </a>
               </div>           {/* cheack all btn section */}
             </div>
             <div className='border border-gray-500 rounded-md p-5 flex-1'>
               <img src={app3} width={400} height={340}></img>
-              <h3 className='text-2xl font-semibold mt-8'>Wather web page practice project</h3>
+              <h3 className='text-2xl font-semibold mt-8'>Wather web page t</h3>
               <p className='text-gray-500 hover:text-cyan-500 text-sm mt-5' > HTML/CSS/javascript layout with working function creat <br></br> with logics, practice project. HTML5, CSS3 (SCSS)</p>
             <div className='flex justify-evenly gap-2 mt-12'>
-              <button className='px-8 py-3  text-lg bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-blue-700 hover:to-cyan-700'>Live preview</button>
-              <button className='px-6 py-2 border rounded-full hover:border-blue-500 hover:text-blue-700'>Checkout github</button>
+            <a href='https://now-check-weather-update.netlify.app/' target='_blank'><button className='px-8 py-3  text-lg bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-blue-700 hover:to-cyan-700'>Live preview</button></a>
+             <a href='https://github.com/Umar-azeem/wather.github.io/blob/main/wather.html' target='_blank'><button className='px-8 py-3 border rounded-full hover:border-blue-500 hover:text-blue-700'>Checkout github</button></a>
               </div>           
             </div>
             </div>
             <div className='flex flex-col sm:flex-row gap-10 mt-11'>
             <div className='border border-gray-500 rounded-md p-5 flex-1'>
               <img src={app4} width={400} height={340}></img>
-              <h3 className='text-2xl font-semibold mt-8'>Apple store practice project</h3>
-              <p className='text-gray-500 hover:text-cyan-500 text-sm mt-5' >Responsive HTML/CSS layout practice project.<br></br> HTML5, CSS3 (SCSS)</p>
+              <h3 className='text-2xl font-semibold mt-8'>Web clock web page</h3>
+              <p className='text-gray-500 hover:text-cyan-500 text-sm mt-5' > HTML/CSS/javascript layout with working function creat<br></br>with logics, only web view. HTML5, CSS3 (SCSS)</p>
             <div className='flex justify-evenly gap-2 mt-12'>
-              <button className='px-6 py-3  text-lg bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-blue-700 hover:to-cyan-700'>Live preview</button>
-              <button className='px-6 py-2 border rounded-full hover:border-blue-500 hover:text-blue-700'>Checkout github</button>
+              <a href='https://clock-timedail.netlify.app/' target='_blank'><button className='px-8 py-3  text-lg bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-blue-700 hover:to-cyan-700'>Live preview</button>
+              </a>
+             <a href='https://github.com/Umar-azeem/clock.design.github.io' target='_blank'><button className='px-8 py-3 border rounded-full hover:border-blue-500 hover:text-blue-700'>Checkout github</button>
+             </a>
               </div>           
             </div>
             <div className='border border-gray-500 rounded-md p-5 flex-1'>
-              <img src={app5} width={400} height={340}></img>
-              <h3 className='text-2xl font-bold mt-8'>E-commerce web page project</h3>
-              <p className='text-gray-500 hover:text-cyan-500 text-sm mt-5' > HTML/CSS/javascript layout with working function creat <br></br> with logics, practice project. HTML5, CSS3 (SCSS)</p>
+              <img src={app2} width={400} height={340}></img>
+              <h3 className='text-2xl font-bold mt-8'>Apple store web page project</h3>
+              <p className='text-gray-500 hover:text-cyan-500 text-sm mt-5' >Responsive/HTML/CSS layout practice  <br></br>projects. HTML5, CSS3 (SCSS)</p>
             <div className='flex justify-evenly gap-2 mt-12'>
               <button className='px-8 py-3 text-lg bg-gradient-to-t from-blue-500 to-cyan-500 rounded-full hover:from-blue-700 hover:to-cyan-700'>Live preview</button>
-              <button className='px-6 py-2 border rounded-full hover:border-blue-500 hover:text-blue-700'>Checkout github</button>
+             <a href='https://github.com/Umar-azeem/apply.github.io' target='_blank'> <button className='px-8 py-3 border rounded-full hover:border-blue-500 hover:text-blue-700'>Checkout github</button></a>
               </div>           
             </div>
           </div>
@@ -250,27 +253,27 @@ function App() {
           <div>
             <ul className="flex gap-4">
               <li>
-                <a>
+                <a href='https://web.facebook.com/' target='_blank'>
                   <img src={Facebook} className="w-5" />
                 </a>
               </li>
               <li>
-                <a>
+                <a href= "https://www.linkedin.com/in/umar-azeem-3b2509167/" target='_blank'>
                   <img src={LinkedIn} className="w-5" />
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href='https://www.instagram.com/umar_azeem.64/' target='_blank'>
                   <img src={Instagram} className="w-5"  />
                 </a>
               </li>
               <li>
-                <a>
+                <a href='https://www.snapchat.com/add/mianu2398?share_id=tu1C5egnfBw&locale=en-US' target='_blank'>
                   <img src={Snapchat} className="w-6 rounded-lg" />
                 </a>
               </li>
               <li>
-                <a>
+                <a href='https://github.com/' target='_blank' >
                   <img src={Github} className="w-5 rounded-lg" />
                 </a>
               </li>
